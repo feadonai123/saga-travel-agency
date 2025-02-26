@@ -1,0 +1,5 @@
+{
+    "car_model": "Fiat Uno",
+    "start_date": "2021-10-10",
+    "end_date": "2021-10-20"
+}

@@ -1,0 +1,6 @@
+{
+    "date": "2021-10-10",
+    "origin": "S\u00e3o Paulo",
+    "destination": "Rio de Janeiro",
+    "qtd_passengers": 2
+}

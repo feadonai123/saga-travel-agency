@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package companhiaAerea;
+
+message BookFlyRequest {
+  string date = 1;
+  string origin = 2;
+  string destination = 3;
+  int32 qtd_passengers = 4;
+}
+
+message BookFlyResponse {
+  bool sucess = 1;
+  int32 id = 2;
+  string message = 3;
+}
+
+message CancelBookFlyRequest {
+  int32 id = 1;
+}
+
+message CancelBookFlyResponse {
+  bool sucess = 1;
+  string message = 2;
+}
+
+service CompanhiaAerea {
+  rpc BookFly(BookFlyRequest) returns (BookFlyResponse);
+  rpc CancelBookFly(CancelBookFlyRequest) returns (CancelBookFlyResponse);
+}

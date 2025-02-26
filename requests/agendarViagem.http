@@ -1,0 +1,16 @@
+POST http://localhost:3000/process HTTP/1.1
+Content-Type: application/json
+
+{
+  "trip_type": "ida_volta",
+  "date_ida": "2021-10-10",
+  "date_volta": "2021-10-20",
+  "origin": "São Paulo",
+  "destination": "Rio de Janeiro",
+  "qtd_passengers": 2,
+  "hotel_qtd_days": 10,
+  "hotel_name": "Copacabana Palace",
+  "car_model": "Fiat Uno",
+  "car_start_date": "2021-10-10",
+  "car_end_date": "2021-10-20"
+}

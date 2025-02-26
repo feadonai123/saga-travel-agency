@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package locadoraCarro;
+
+message BookCarRequest {
+  string car_model = 1;
+  string start_date = 2;
+  string end_date = 3;
+}
+
+message BookCarResponse {
+  bool sucess = 1;
+  int32 id = 2;
+  string message = 3;
+}
+
+message CancelBookCarRequest {
+  int32 id = 1;
+}
+
+message CancelBookCarResponse {
+  bool sucess = 1;
+  string message = 2;
+}
+
+service LocadoraCarro {
+  rpc BookCar(BookCarRequest) returns (BookCarResponse);
+  rpc CancelBookCar(CancelBookCarRequest) returns (CancelBookCarResponse);
+}
