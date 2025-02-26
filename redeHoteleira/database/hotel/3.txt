@@ -1,0 +1,5 @@
+{
+    "hotel_name": "Copacabana Palace",
+    "qtd_days": 10,
+    "qtd_guests": 2
+}
